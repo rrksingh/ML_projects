@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>House price Prediction Using Machine Learning</title>
+</head>
+<body>
+    <h1>House price Prediction</h1>
+
+    <form action = "{{url_for('predict')}}" method="post">
+
+        <input type="float" name="area" placeholder="area"required="required">
+            <br>
+
+        <input type="float" name="bedrooms" placeholder="bedrooms"required="required">
+            <br>
+
+        <input type="float" name="bathrooms" placeholder="bathrooms"required="required">
+            <br>
+
+        <input type="float" name="stories" placeholder="stories"required="required">
+            <br>
+      
+        <input type="float" name="mainroad" placeholder="mainroad"required="required">
+            <br>
+            
+        <input type="float" name="guestroom" placeholder="guestroom"required="required">
+            <br>
+
+        <input type="float" name="basement" placeholder="basement"required="required">
+            <br>
+
+        <input type="float" name="hotwaterheating" placeholder="hotwaterheating"required="required">
+            <br>
+
+        <input type="float" name="airconditioning" placeholder="airconditioning"required="required">
+            <br>
+      
+        <input type="float" name="parking" placeholder="parking"required="required">
+            <br>
+            
+        <input type="float" name="prefarea" placeholder="prefarea"required="required">
+            <br>
+
+        <input type="float" name="furnishingstatus" placeholder="furnishingstatus"required="required">
+            <br>    
+        <br><br>
+        <button type="submit">Submit</button>
+        <i>{{prediction_text}}</i>
+
+    </form>
+
+
+
+</body>
+</html>
+
